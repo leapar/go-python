@@ -96,3 +96,18 @@ TODO:
  - think about the need (or not) to translate CPython exceptions into go panic/recover mechanism
 
  - use SWIG to automatically wrap the whole CPython api ?
+
+
+
+注意是python27的64位版本：
+
+```shell
+
+CGO_CPPFLAGS -ID:\python27\include
+
+CGO_LDFLAGS -LD:\python27\libs -lpython27
+
+CGO_CXXFLAGS "--std=c++11"
+```
+
+```
